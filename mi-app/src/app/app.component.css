@@ -1,0 +1,81 @@
+*{
+	margin: 0% auto;
+	padding: 15px;
+	color: rgb(0, 217, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+h1{
+  text-decoration: underline overline;
+}
+
+input, select, textarea{
+    color: darkgrey;
+    background-color: grey;
+}
+
+textarea:focus, input:focus, select:focus {
+    color: black;
+    background-color: darkgrey;
+}
+
+input:placeholder{
+	color: cyan;
+	background-color: rgb(0, 255, 13);
+}
+
+.div {
+    margin: 0% auto;
+  width: 50%;
+  border: 3px inset darkslateblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.div-login-text {
+  margin: auto;
+  width: 50%;
+  border: 1px solid blue;
+  padding: 4px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(0, 255, 13);
+  color: rgb(255, 251, 0);
+  border: 1px solid blue;
+  margin: 5% auto;
+  font-size: 20px;
+  padding: 7px;
+  text-align: center;
+}
+
+h4 {color: yellow; text-align: center; font-family: serif;}
+
+p
+{
+    text-align: center;
+    color: yellow;
+}
+
+.button {
+  border: none;
+  font-family:  sans-serif;
+  background-color: darkred;
+  color: lightblue;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #A800FF;
+}
+
+.button:hover {
+  background-color: red;
+  color: black;
+  
+}

@@ -1,0 +1,14 @@
+<h1> Lista de pedidos </h1>
+<div class="divmain" [ngClass]="estadoListadoPedidos">
+
+<div *ngIf="pedidos.length == 0">No hay pedidos</div>
+
+<ul class="list-group">
+    <div class="div" *ngFor="let p of pedidos">
+        <li> {{ p.id }} {{ p.desc }} </li>
+                <li  class="list-group-item {{ p.entregado ? 'disabled': ''}}"  >{{ p.id }}  {{ p.desc }}</li>
+    </div>
+</ul>
+</div>
+
+<button class="button" (click)="onAltaPedido()"> Alta pedido </button>

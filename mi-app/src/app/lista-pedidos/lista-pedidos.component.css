@@ -1,0 +1,64 @@
+h1, h2, h3, h4
+{
+    text-decoration: underline;
+    color:rgb(0, 60, 255);
+    background-color: rgb(32, 36, 36);
+}
+
+.div {
+    margin: 0.2% auto;
+  width: 50%;
+  border: 2px inset darkslateblue;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(61, 0, 0);
+}
+
+.div:hover {
+    margin: 0.2% auto;
+  width: 51%;
+  border: 2px inset rgb(187, 115, 255);
+  padding: 5px;
+  text-align: center;
+  background-color: darkred;
+}
+
+.divmain
+{
+    margin: 0% auto;
+  width: 0% auto;
+  border: 1px inset rgb(187, 115, 255);
+  padding: 7px;  
+  text-align: center;
+}
+
+.button {
+    border: none;
+    font-family:  sans-serif;
+    background-color: darkred;
+    color: lightblue;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #A800FF;
+  }
+  
+  .button:hover {
+    background-color: red;
+    color: black;
+    
+  }
+
+  .entregado
+  {
+    color: greenyellow;
+  }
+
+  .noEntregado
+  {
+    color: red;
+  }
