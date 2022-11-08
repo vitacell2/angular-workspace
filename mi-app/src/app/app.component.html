@@ -3,6 +3,23 @@
 <div>
 <!-- Componente cabecera -->
 <app-cabecera> myCabecera 111 </app-cabecera>
+<br>
+<br>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a routerLink="/" class="nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"> List Pedidos</a> 
+    </li>
+    <li class="nav-item" role="presentation">
+        <a routerLink="/pedido" class="nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"> Detalle Pedido</a> 
+    </li>
+    <li class="nav-item" role="presentation">
+        <a routerLink="/pedido/edit" class="nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"> Alta Pedido</a> 
+    </li>
+  </ul>
+
 
 <!-- Componente lista de pedidos -->
 <app-lista-pedidos> Lista de pedidos 111 </app-lista-pedidos>

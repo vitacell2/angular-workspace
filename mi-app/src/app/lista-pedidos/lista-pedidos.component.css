@@ -1,10 +1,12 @@
 h1, h2, h3, h4
 {
-    text-decoration: overline;
-    padding: 35px;
-    color:rgb(0, 60, 255);
-    background-color: rgb(3, 3, 3);
-    text-align: start;
+    text-decoration: none;
+    padding: 0px;
+    color:rgb(0, 217, 255);
+    background-color: rgb(0, 26, 255);
+    text-align: center;
+    font-style: italic;
+    font-family: fantasy;
 }
 
 li
@@ -14,7 +16,8 @@ li
   text-decoration: dotted;
 }
 
-.div {
+.div
+{
     margin: 0.1% auto;
   width: 90%;
   border: 2px inset darkslateblue;
@@ -23,7 +26,8 @@ li
   background-color: rgb(61, 0, 0);
 }
 
-.div:hover {
+.div:hover
+{
     margin: 0.2% auto;
   width: 91%;
   border: 2px inset rgb(187, 115, 255);
@@ -41,7 +45,8 @@ li
   text-align: center;
 }
 
-.button {
+.button
+{
     border: none;
     font-family:  sans-serif;
     background-color: darkred;
@@ -56,14 +61,16 @@ li
     border: 2px solid #A800FF;
   }
   
-  .button:hover {
+  .button:hover
+  {
     background-color: red;
     color: rgb(255, 255, 255);
     cursor: cell;
     
   }
 
-  .button:disabled, .button[disabled] {
+  .button:disabled, .button[disabled]
+  {
     background-color: rgb(32, 32, 32);
     color: rgb(88, 88, 88);
     border: 2px solid #49006d;

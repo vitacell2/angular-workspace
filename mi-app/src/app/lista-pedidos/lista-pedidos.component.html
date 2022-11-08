@@ -1,6 +1,4 @@
-<br>
-<br>
-<br>
+
 <h1> Lista de pedidos </h1>
 <div class="divmain" [ngClass]="estadoListadoPedidos">
 
@@ -10,7 +8,8 @@
 <ul class="list-group">
     <div class="div" *ngFor="let p of pedidos">
         <li  class="list-group-item {{ ! p.entregado ? 'disabled': ''}}"  >    
-           <app-item-pedido 
+            <a [routerLink]="['/pedido', p.id]">
+            <app-item-pedido 
 
             (entregaRealizada)="onTerminoEntrega($event)"
             [id]="p.id" 
@@ -18,6 +17,8 @@
             [entregado]="p.entregado">
 
         </app-item-pedido>   
+    </a>
+
         </li>
     </div>
     
