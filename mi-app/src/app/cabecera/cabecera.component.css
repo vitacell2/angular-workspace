@@ -1,6 +1,6 @@
-
 header{
-    border: 1px solid rgb(54, 68, 54);
+    border: 2px solid rgb(0, 102, 255);
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
+    color:rgb(0, 225, 255);
 }

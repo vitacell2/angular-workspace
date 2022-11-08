@@ -7,6 +7,8 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { ListaPedidosComponent } from './lista-pedidos/lista-pedidos.component';
 import { PedidoComponent } from './lista-pedidos/pedido/pedido.component';
 import { EditarPedidoComponent } from './lista-pedidos/editar-pedido/editar-pedido.component';
+import { FormsModule } from '@angular/forms';
+import { ItemPedidoComponent } from './lista-pedidos/item-pedido/item-pedido.component';
 
 // app.module va a decir como funcionan los componentes
 
@@ -16,11 +18,13 @@ import { EditarPedidoComponent } from './lista-pedidos/editar-pedido/editar-pedi
     CabeceraComponent,
     ListaPedidosComponent,
     PedidoComponent,
-    EditarPedidoComponent
+    EditarPedidoComponent,
+    ItemPedidoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,39 @@
+<br>
+<br>
+<br>
 <h1> Lista de pedidos </h1>
 <div class="divmain" [ngClass]="estadoListadoPedidos">
 
+
 <div *ngIf="pedidos.length == 0">No hay pedidos</div>
+
+<ul class="list-group">
+    <div class="div" *ngFor="let p of pedidos">
+        <li  class="list-group-item {{ ! p.entregado ? 'disabled': ''}}"  >    
+           <app-item-pedido 
+
+            (entregaRealizada)="onTerminoEntrega($event)"
+            [id]="p.id" 
+            descripcion="{{p.desc}}" 
+            [entregado]="p.entregado">
+
+        </app-item-pedido>   
+        </li>
+    </div>
+    
+</ul>
+    
+
+<!--
+<ul class="list-group">
+    <div class="div" *ngFor="let p of pedidos">
+        <li  class="list-group-item {{ p.entregado ? 'disabled': ''}}"  >    
+            <!--{{ p.id }}  - {{ p.desc }} - {{ p.fechaPedido | date: 'short':'UTC':'es'}}   
+            <app-item-pedido [id]="p.id" descripcion="{{p.desc}}">  </app-item-pedido>
+        </li>
+    </div>
+</ul>    
+
 
 <ul class="list-group">
     <div class="div" *ngFor="let p of pedidos">
@@ -9,6 +41,10 @@
                 <li  class="list-group-item {{ p.entregado ? 'disabled': ''}}"  >{{ p.id }}  {{ p.desc }}</li>
     </div>
 </ul>
+-->
 </div>
 
-<button class="button" (click)="onAltaPedido()"> Alta pedido </button>
+<br>
+<br>
+
+<button class="button" (click)="onAltaPedido()"[disabled]="! modoNuevo"> Alta pedido </button>

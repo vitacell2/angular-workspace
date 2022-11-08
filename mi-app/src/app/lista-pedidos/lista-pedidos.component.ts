@@ -11,7 +11,8 @@ export class ListaPedidosComponent implements OnInit
 {
   pedidos: Pedido[] = [];
 
-  estadoListadoPedidos: String = 'noEntregado';
+  estadoListadoPedidos: String = 'entregado';
+  modoNuevo: boolean = true;
 
   // Inyecta una instancia de logservice
   constructor(private log:LogService)
@@ -52,6 +53,14 @@ export class ListaPedidosComponent implements OnInit
   public onAltaPedido(): void
   {
     console.log('abrir formulario edicion pedido');
+    this.log.info("Abrir formulario alta nuevo pedido");
+  }
+
+  public onTerminoEntrega(id: number)
+  {
+    console.log("Me notifica que ha cambiado pedido" + id);
+    this.pedidos;
+    this.pedidos[id-1].entregado = true;
   }
 
 }

@@ -1,39 +1,40 @@
 *{
 	margin: 0% auto;
-	padding: 15px;
-	color: rgb(0, 217, 255);
-    text-align: center;
-    background-color: rgb(0, 0, 0);
+	padding: 0% auto;
+	color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
 }
 
-h1{
+header{
+  border: 2px solid rgb(0, 102, 255);
+  padding: 10px;
+  margin: 0px;
+  color:rgb(0, 225, 255);
+}
+
+h1, h2, h3, h4
+{
+  margin: 0% auto;
+	padding: 0% auto;
   text-decoration: underline overline;
+  color: yellow; 
+  background-color: rgb(0, 0, 200);
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-input, select, textarea{
-    color: darkgrey;
-    background-color: grey;
-}
-
-textarea:focus, input:focus, select:focus {
-    color: black;
-    background-color: darkgrey;
-}
-
-input:placeholder{
-	color: cyan;
-	background-color: rgb(0, 255, 13);
-}
-
-.div {
-    margin: 0% auto;
+.div
+{
+  margin: 0% auto;
   width: 50%;
   border: 3px inset darkslateblue;
   padding: 10px;
   text-align: center;
 }
 
-.div-login-text {
+.div-login-text
+{
   margin: auto;
   width: 50%;
   border: 1px solid blue;
@@ -41,7 +42,8 @@ input:placeholder{
   text-align: center;
 }
 
-body {
+body
+{
   background-color: rgb(0, 255, 13);
   color: rgb(255, 251, 0);
   border: 1px solid blue;
@@ -51,19 +53,17 @@ body {
   text-align: center;
 }
 
-h4 {color: yellow; text-align: center; font-family: serif;}
-
 p
 {
     text-align: center;
     color: yellow;
 }
 
-.button {
+button {
   border: none;
   font-family:  sans-serif;
   background-color: darkred;
-  color: lightblue;
+  color: rgb(255, 255, 255);
   padding: 15px 16px;
   text-align: center;
   text-decoration: underline;
@@ -74,8 +74,16 @@ p
   border: 2px solid #A800FF;
 }
 
-.button:hover {
+button:hover {
   background-color: red;
-  color: black;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
   
+}
+
+button:disabled, button[disabled] {
+  background-color: rgb(32, 32, 32);
+  color: rgb(88, 88, 88);
+  border: 2px solid #49006d;
+  cursor: context-menu;
 }

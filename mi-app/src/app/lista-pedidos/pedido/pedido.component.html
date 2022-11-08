@@ -12,7 +12,7 @@ Fecha pedido: {{ pedido.fechaPedido }}
 entregado: {{ pedido.entregado }}
 
 <div>
-    <div *ngIf="pedido.entregado;else elseBlock">SI</div>
+    <div *ngIf="pedido.entregado; else elseBlock">SI</div>
 
     <ng-template #elseBlock> NO </ng-template>
 </div>

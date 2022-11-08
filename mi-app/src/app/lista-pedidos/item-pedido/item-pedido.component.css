@@ -1,0 +1,47 @@
+.row
+{
+    margin: 0% auto;
+  width: 95%;
+  border: 7px inset rgb(255, 255, 255);
+  padding: 1px;
+  text-align: center;
+}
+
+.col
+{
+  margin: 0% auto;
+  width: auto;
+  height: 0% auto;
+  border: 1px solid rgb(0, 255, 234);
+  padding: 0px;
+  text-align: center;
+}
+
+.button {
+    border: none;
+    font-family:  sans-serif;
+    background-color: darkred;
+    color: rgb(255, 255, 255);
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #A800FF;
+  }
+  
+  .button:hover {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+  }
+
+  .button:disabled, .button[disabled] {
+    background-color: rgb(32, 32, 32);
+    color: rgb(88, 88, 88);
+    border: 2px solid #49006d;
+    cursor: context-menu;
+  }

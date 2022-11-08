@@ -1,13 +1,22 @@
 h1, h2, h3, h4
 {
-    text-decoration: underline;
+    text-decoration: overline;
+    padding: 35px;
     color:rgb(0, 60, 255);
-    background-color: rgb(32, 36, 36);
+    background-color: rgb(3, 3, 3);
+    text-align: start;
+}
+
+li
+{
+  margin: 0.2% auto;
+  color:rgb(0, 60, 255);
+  text-decoration: dotted;
 }
 
 .div {
-    margin: 0.2% auto;
-  width: 50%;
+    margin: 0.1% auto;
+  width: 90%;
   border: 2px inset darkslateblue;
   padding: 5px;
   text-align: center;
@@ -16,7 +25,7 @@ h1, h2, h3, h4
 
 .div:hover {
     margin: 0.2% auto;
-  width: 51%;
+  width: 91%;
   border: 2px inset rgb(187, 115, 255);
   padding: 5px;
   text-align: center;
@@ -36,7 +45,7 @@ h1, h2, h3, h4
     border: none;
     font-family:  sans-serif;
     background-color: darkred;
-    color: lightblue;
+    color: rgb(255, 255, 255);
     padding: 15px 16px;
     text-align: center;
     text-decoration: underline;
@@ -49,16 +58,35 @@ h1, h2, h3, h4
   
   .button:hover {
     background-color: red;
-    color: black;
+    color: rgb(255, 255, 255);
+    cursor: cell;
     
+  }
+
+  .button:disabled, .button[disabled] {
+    background-color: rgb(32, 32, 32);
+    color: rgb(88, 88, 88);
+    border: 2px solid #49006d;
+    cursor: context-menu;
   }
 
   .entregado
   {
-    color: greenyellow;
+    color: rgb(0, 255, 0);
   }
 
   .noEntregado
   {
     color: red;
+  }
+
+  .list-group-item
+  {
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
+  }
+
+  .list-group
+  {
+    color: rgb(255, 0, 255);
   }
