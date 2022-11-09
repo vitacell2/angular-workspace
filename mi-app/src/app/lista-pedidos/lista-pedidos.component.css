@@ -11,14 +11,14 @@ h1, h2, h3, h4
 
 li
 {
-  margin: 0.2% auto;
+  margin: 0.1% auto;
   color:rgb(0, 60, 255);
   text-decoration: dotted;
 }
 
 .div
 {
-    margin: 0.1% auto;
+    margin: 0.5% auto;
   width: 90%;
   border: 2px inset darkslateblue;
   padding: 5px;
@@ -28,7 +28,7 @@ li
 
 .div:hover
 {
-    margin: 0.2% auto;
+    margin: 0.5% auto;
   width: 91%;
   border: 2px inset rgb(187, 115, 255);
   padding: 5px;
@@ -90,7 +90,7 @@ li
   .list-group-item
   {
     color: rgb(255, 255, 255);
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(41, 0, 3);
   }
 
   .list-group

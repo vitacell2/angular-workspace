@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {LogService} from '../servicios/log.service';
 import {Pedido} from '../model/pedido';
+import { PedidosHttpService } from '../servicios/pedidos-http.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-pedidos',
   templateUrl: './lista-pedidos.component.html',
-  styleUrls: ['./lista-pedidos.component.css']
+  styleUrls: ['./lista-pedidos.component.css'],
+  providers:[LogService]
 })
 export class ListaPedidosComponent implements OnInit
 {
@@ -15,8 +18,18 @@ export class ListaPedidosComponent implements OnInit
   modoNuevo: boolean = true;
 
   // Inyecta una instancia de logservice
-  constructor(private log:LogService)
-  {
+  constructor(private log: LogService,
+      private pedidosService: PedidosHttpService,
+      private router: Router)
+    {
+      // this.pedidos = pedidosService.getAll();
+      pedidosService.getAll().subscribe
+      (
+        (lista: Pedido[]) => this.pedidos = lista
+      );
+
+    
+    /*
     this.pedidos = [{
       id: 1,
       user: "Luis Manuel",
@@ -37,8 +50,9 @@ export class ListaPedidosComponent implements OnInit
       desc: "Manzanas",    
       fechaPedido: new Date(),
       entregado: false
-    }]
+    }]*/
   }
+  
 
   ngOnInit(): void
   {
@@ -52,15 +66,20 @@ export class ListaPedidosComponent implements OnInit
 
   public onAltaPedido(): void
   {
-    console.log('abrir formulario edicion pedido');
+    //console.log('abrir formulario edicion pedido');
     this.log.info("Abrir formulario alta nuevo pedido");
+    this.router.navigate(['/pedido/edit']);
   }
 
   public onTerminoEntrega(id: number)
   {
     console.log("Me notifica que ha cambiado pedido" + id);
-    this.pedidos;
-    this.pedidos[id-1].entregado = true;
+    this.pedidosService.getAll().subscribe
+    (
+      (lista:Pedido[]) => this.pedidos = lista
+    );
+    //this.pedidos;
+    //this.pedidos[id-1].entregado = true;
   }
 
 }

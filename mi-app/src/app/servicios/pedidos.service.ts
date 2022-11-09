@@ -10,7 +10,7 @@ export class PedidosService {
 
 
 
-  constructor() { 
+  constructor() {
     this.pedidos = [
       {
         id: 1,
